@@ -1,0 +1,30 @@
+/* Features section */
+.features {
+  display: flex;
+  justify-content: space-between;
+
+  &-item {
+    width: 270px;
+  }
+  &-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 120px;
+    background-color: var(--main-background-color);
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+  & .item-title {
+    line-height: 1.14;
+    margin-bottom: 10px;
+  }
+  & .item-text {
+    text-align: left;
+  }
+}
+.icon {
+  width: 70px;
+  height: 70px;
+}

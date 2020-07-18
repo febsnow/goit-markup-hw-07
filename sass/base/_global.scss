@@ -1,0 +1,68 @@
+/* Global CSS */
+html {
+  box-sizing: border-box;
+}
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.container {
+  width: 1200px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 94px;
+  padding-right: 15px;
+  padding-bottom: 94px;
+  padding-left: 15px;
+
+  .hero & {
+    margin: 0;
+    padding: 0;
+  }
+  .page-header & {
+    display: flex;
+    align-items: center;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-color: $header-bg-color;
+  }
+  .page-footer & {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 45px;
+    padding-bottom: 28px;
+    color: #ffffff;
+    background-color: $footer-bg-color;
+  }
+}
+img {
+  display: block;
+}
+.page-header a,
+.page-footer a {
+  text-decoration: none;
+}
+.visually-hidden {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
