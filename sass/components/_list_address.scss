@@ -1,7 +1,10 @@
 /* Address list */
 .address {
+  &.list {
+    @extend %list;
+  }
   &-item {
-    font-size: 14px;
+    @include font(14px, 1.71);
     font-style: normal;
     &:not(:last-child) {
       margin-bottom: 9px;
@@ -10,9 +13,9 @@
 }
 .address-item-link {
   color: rgba(255, 255, 255, 0.6);
-  transition: &animation;
+  transition: $animation;
   &:hover,
   &:focus {
-    color: &active-color;
+    color: $active-color;
   }
 }

@@ -1,0 +1,9 @@
+$main-font: 'Roboto', sans-serif;
+$logo-font: 'Raleway', sans-serif;
+$copy-font-size: 12px;
+
+body {
+  font-family: $main-font;
+  color: $main-text-color;
+  @include font(14px, 1.71, 0.03em);
+}

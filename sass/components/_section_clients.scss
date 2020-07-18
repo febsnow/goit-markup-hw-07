@@ -1,27 +1,30 @@
-/* Our Clients */
+/* Clients */
 .clients {
-  display: flex;
-  justify-content: space-between;
-
-  &-item-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    border: 1px solid #afb1b8;
-    border-radius: 4px;
-    height: 90px;
-    width: 170px;
-
-    transition: $animation;
-
-    &:hover,
-    &:focus {
-      border-color: $active-color;
-      transform: scale(1.1);
-    }
+  & .title {
+    @extend %title;
+  }
+  &.list {
+    @include flex(flex, space-between);
+    @extend %list;
   }
 }
+
+.clients-item-link {
+  @include flex(flex, center, center);
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  height: 90px;
+  width: 170px;
+
+  transition: $animation;
+
+  &:hover,
+  &:focus {
+    border-color: $active-color;
+    transform: scale(1.1);
+  }
+}
+
 .clients-logo {
   fill: #afb1b8;
 

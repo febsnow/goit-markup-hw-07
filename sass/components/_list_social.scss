@@ -1,7 +1,9 @@
 /* Social List */
 .social {
   @extend %centred-items;
-
+  &.list {
+    @extend %list;
+  }
   .page-footer & {
     padding: 0;
   }
@@ -10,22 +12,20 @@
   margin-right: 10px;
 }
 .social-item-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex(flex, center, center);
   border-radius: 50%;
   width: 44px;
   height: 44px;
 
   transition: $animation;
 
+  .page-footer & {
+    background-color: $main-text-color;
+  }
   &:hover,
   &:focus {
     background-color: $active-color;
     transform: scale(1.1);
-  }
-  .page-footer & {
-    background-color: $main-text-color;
   }
 }
 

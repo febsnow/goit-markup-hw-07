@@ -1,26 +1,27 @@
 /* Features section */
 .features {
-  display: flex;
-  justify-content: space-between;
+  @include flex(flex, space-between);
+  @extend %list;
 
   &-item {
     width: 270px;
   }
   &-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex(flex, center, center);
     width: 270px;
     height: 120px;
-    background-color: var(--main-background-color);
+    background-color: $main-bg-color;
     border-radius: 4px;
     margin-bottom: 30px;
   }
   & .item-title {
-    line-height: 1.14;
+    color: $additional-text-color;
+    @include font(14px, 0.87);
+    text-transform: uppercase;
     margin-bottom: 10px;
   }
   & .item-text {
+    @include font(14px, 1.71);
     text-align: left;
   }
 }

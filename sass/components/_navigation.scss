@@ -1,6 +1,7 @@
 /* Navigation */
 .nav {
   display: flex;
+  @extend %list;
 
   &-item:not(:last-child) {
     margin-right: 50px;
@@ -23,22 +24,27 @@
   }
 }
 
-.nav-item-link:before {
-  @extend %slider;
-
-  &:hover,
-  &:focus {
+.nav-item-link {
+  &:before {
+    @extend %slider;
+    left: 0;
+    transform-origin: left;
+  }
+  &:hover:before,
+  &:focus:before {
     opacity: 1;
     transform: scaleX(1);
   }
 }
 
-.nav-item-link:after {
-  @extend %slider;
-  transform-origin: left;
-
-  &:hover,
-  &:focus {
+.nav-item-link {
+  &:after {
+    @extend %slider;
+    right: 0;
+    transform-origin: right;
+  }
+  &:hover:after,
+  &:focus:after {
     opacity: 1;
     transform: scaleX(1);
   }
