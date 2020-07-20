@@ -1,9 +1,14 @@
 $main-font: 'Roboto', sans-serif;
 $logo-font: 'Raleway', sans-serif;
-$copy-font-size: 12px;
+$main-font-size: 14px;
+$main-line-height: 1.71;
+$main-letter-spacing: 0.03em;
+$copy-text-size: 12px;
 
 body {
   font-family: $main-font;
   color: $main-text-color;
-  @include font(14px, 1.71, 0.03em);
+  font-size: $main-font-size;
+  line-height: $main-line-height;
+  letter-spacing: $main-letter-spacing;
 }

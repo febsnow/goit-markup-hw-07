@@ -2,7 +2,7 @@
 .our-team {
   text-align: center;
   @include font(16px, 1.19);
-  background: $main-bg-color;
+  background: $additional-bg-color;
 
   & .title {
     @extend %title;

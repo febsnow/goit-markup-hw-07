@@ -3,7 +3,7 @@
   justify-content: $justify;
   align-items: $align;
 }
-@mixin font($size, $line-height, $letter-spacing: 0.03em) {
+@mixin font($size: 14px, $line-height: 1.71, $letter-spacing: 0.03em) {
   font-size: $size;
   line-height: $line-height;
   letter-spacing: $letter-spacing;

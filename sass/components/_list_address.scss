@@ -4,7 +4,6 @@
     @extend %list;
   }
   &-item {
-    @include font(14px, 1.71);
     font-style: normal;
     &:not(:last-child) {
       margin-bottom: 9px;
